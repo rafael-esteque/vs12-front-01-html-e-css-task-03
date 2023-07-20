@@ -112,6 +112,7 @@ h3 {
 
 .h3__checkout {
     text-align: left;
+    padding-left: 6rem;
 }
 
 .cafes {
@@ -337,6 +338,9 @@ h4 {
 .success {
     background: #D9D9D9;
     text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+
 }
 
 .campo {
