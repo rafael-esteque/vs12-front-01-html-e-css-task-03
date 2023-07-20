@@ -119,12 +119,12 @@ h3 {
     display: inline-flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 22px;
     padding: 2rem 1rem;
 }
 
 .cafe {
-    width: 300px;
+    width: 270px;
     height: 380px;
     flex-shrink: 0;
     background: var(--background);
