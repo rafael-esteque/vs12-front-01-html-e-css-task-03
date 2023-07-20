@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/SGV" href="./assets/Vector.svg">
-    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="../styles/global.css">
     <title>Success Page</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="./assets/Vector.svg">
+            <img src="../assets/Vector.svg">
             <h1>Vemser Coffee</h1>
         </div>
-        <img src="./assets/ShoppingCart.svg">
+        <img src="../assets/ShoppingCart.svg">
     </header>
 
-    <main class="container"></main>
+    <main class="container">
+        <section class="success">
+            <h3>Pedido confirmado!</h3>
+            <p>Você receberá seu café em instantes. <br> Enquanto aguarda, que tal deixar uma mensagem contando como foi sua experiência? <br> A sua opinião é muito importante para nós!</p>
+            <fieldset class="campo">
+                <textarea cols="70" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+            </fieldset>
+            <button onclick="location.href='../index.html'"><img src="../assets/Vector.svg">Comprar novamente</button>
+            <br><br>
+        </section>
+    </main>
+</body>

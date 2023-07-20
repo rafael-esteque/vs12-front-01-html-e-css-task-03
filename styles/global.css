@@ -5,7 +5,13 @@
     --black: #1E1A1D;
     --brown: #B47150;
 
+    --background: #E8E5E4;
+    --darker_grey: #C6C6C6;
+
     font-family: 'Inter', sans-serif;
+    border: 1px solid;
+    padding: 0 1rem;
+    justify-content: center;
 
 }
 
@@ -13,11 +19,57 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.cart {
+    transition: 1s all;
+}
+
+.cart:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 button {
     background: var(--brown);
     color: #FFF;
+    border-style: none;
+}
+
+.confira {
+    width: 291.329px;
+    height: 54.248px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border-style: none;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: 1s all;
+}
+
+.confira:hover {
+    transform: scale(1.1);
 }
 
 .logo {
@@ -38,40 +90,214 @@ button {
     box-sizing: border-box;
     width: 620.613px;
     height: 356px;
-    flex-shrink: 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin: 20px;
+}
+
+.hero-text2 {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .hero-img {
     box-sizing: border-box;
     width: 548px;
     height: 356px;
-    flex-shrink: 0;
     border-radius: 4px;
     margin: 20px;
 }
 
 h3 {
     text-align: center;
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.h3__checkout {
+    text-align: left;
 }
 
 .cafes {
-    display: flex;
+    display: inline-flex;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 24px;
 }
 
 .cafe {
     width: 300px;
     height: 380px;
     flex-shrink: 0;
-    background: #E8E5E4;
+    background: var(--background);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border-radius: 4px 12px;
+    margin-bottom: 30px;
 }
 
 .cafe__imagem {
+    margin-top:-30px;
     width: 120px;
     height: 120px;
     flex-shrink: 0;
 }
+
+.botoes__pequenos {
+    padding: 5px 16px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.botao__pequeno {
+    border-radius: 16px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cafe__conteudo {
+    width: 205px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.preco {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.adicionar {
+    display: flex;
+    width: 195px;
+    padding: 4px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: 1s all;
+}
+
+.adicionar:hover {
+    transform: scale(1.1);
+}
+
+
+/*Aqui começam as classes do checkout*/
+
+.caixas_checkout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dados {
+    display: inline-flex;
+    padding: 28px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 31px;
+    border-radius: 4px;
+    background: var(--background);
+}
+
+.complete {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.input {
+    color: var(--black);
+    width: 511px;
+    height: 68px;
+    flex-shrink: 0;
+    background: var(--darker_grey);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-style: none;
+}
+
+.selecionados {
+    display: inline-flex;
+    padding: 28px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 31px;
+    border-radius: 4px;
+    background: var(--background);
+}
+
+.cafe_selecionado {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.selecionado {
+    display: flex;
+    width: 519px;
+    height: 144px;
+    flex-shrink: 0;
+}
+
+.contador {
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes {
+    background: var(--darker_grey);
+    display: inline-flex;
+    padding: 8px 17px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+/*Aqui começam as classes do success*/
+
+.success {
+    background: #D9D9D9;
+    text-align: center;
+}
+
+.campo {
+    border: none;
+    align-items: center;
+}
+
