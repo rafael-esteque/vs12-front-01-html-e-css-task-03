@@ -315,6 +315,18 @@ h4 {
     flex: 0.3 0 50px;
 }
 
+.lista-checkout {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .confirmarPedido {
     color: #FFF;
     font-family: Inter;
