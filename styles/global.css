@@ -274,10 +274,13 @@ h4 {
 }
 
 .selecionado {
+    padding: 1rem;
+    width: 90%;
     align-items: center;
     display: flex;
     gap: 1.75rem;
     flex-shrink: 0;
+    border-bottom: 1px solid;
 }
 
 .contador {
