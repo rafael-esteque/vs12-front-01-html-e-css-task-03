@@ -241,8 +241,8 @@ h4 {
 
 .input {
     color: var(--black);
-    width: 511px;
-    height: 68px;
+    width: 98%;
+    height: 4rem;
     flex-shrink: 0;
     background: var(--darker_grey);
     font-family: 'Inter', sans-serif;
