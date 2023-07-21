@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --white: #FBFBFB;
+    --black: #1E1A1D;
+    --brown: #B47150;
+
+    --background: #E8E5E4;
+    --darker_grey: #C6C6C6;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 95%;
+    margin: 5% auto;
+}
+
+button {
+    background: var(--brown);
+    color: #FFF;
+    border-style: none;
+}
+
+/*ESTILO DO HEADER*/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: 1s all;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cart {
+    transition: 1s all;
+}
+
+.cart:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.caixas_checkout {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5.375rem;
+    gap: 10%;
+}
+
+h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.dados {
+    flex: 1;
+    display: inline-flex;
+    padding: 28px 32px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 31px;
+    border-radius: 4px;
+    background: var(--background);
+    height: fit-content;
+}
+
+.complete {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.input {
+    color: var(--black);
+    width: 98%;
+    height: 4rem;
+    flex-shrink: 0;
+    background: var(--darker_grey);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-style: none;
+}
+
+.selecionados {
+    flex: 1;
+    display: inline-flex;
+    padding: 28px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 31px;
+    border-radius: 4px;
+    background: var(--background);
+    height: fit-content;
+}
+
+.cafe_selecionado {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.selecionado {
+    padding: 1rem;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    gap: 1.75rem;
+    flex-shrink: 0;
+    border-bottom: 1px solid;
+}
+
+.contador {
+    display: flex;
+    flex-direction: column;
+}
+
+.contador h5 {
+    font-size: 1.125rem;
+}
+
+.botoes {
+    display: flex;
+    padding: 8px 17px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.botoes>div {
+    background: var(--darker_grey);
+}
+
+.botoes>div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 115px;
+}
+
+.botoes>div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.3 0 50px;
+}
+
+.lista-checkout {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.confirmarPedido {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    display: flex;
+    padding: 11px 152px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 4px;
+}
