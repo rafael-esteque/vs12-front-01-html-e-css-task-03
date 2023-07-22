@@ -12,8 +12,8 @@
 }
 
 .container {
-    max-width: 95%;
-    margin: 5% auto;
+    max-width: 90%;
+    margin: 3% auto;
 }
 
 button {
@@ -24,15 +24,21 @@ button {
 
 /*ESTILO DO HEADER*/
 header {
+    height: 3rem;
     display: flex;
     justify-content: space-between;
 }
 
 .logo {
+    width: 13rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     transition: 1s all;
+}
+
+.logo h1 {
+    font-size: 1.3rem;
 }
 
 .logo:hover {
@@ -41,6 +47,7 @@ header {
 }
 
 .cart {
+    height: 2.4rem;
     transition: 1s all;
 }
 
@@ -49,17 +56,32 @@ header {
     cursor: pointer;
 }
 
+/*ESTILO DA MENSAGEM FINAL*/
+
 .success {
     background: #D9D9D9;
     text-align: center;
-    margin: 2rem;
+    margin: 5rem 2rem;
     padding: 2rem;
+}
 
+.success h3 {
+    font-size: 2.5rem;
+}
+
+.success p {
+    font-size: 1.25rem;
 }
 
 .campo {
     border: none;
     align-items: center;
+}
+
+textarea {
+    border-radius: 8px;
+    padding: 1rem;
+
 }
 
 .botaoFinal {
@@ -80,8 +102,19 @@ header {
     align-items: center;
 
     border-radius: 4px;
+
+    transition: 1s all;
 }
 
-.cor {
+.comprarNovamente:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.caneca {
     color: var(--white);
+}
+
+.textoBotaoFinal {
+
 }
