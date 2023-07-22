@@ -63,6 +63,7 @@ header {
     text-align: center;
     margin: 5rem 2rem;
     padding: 2rem;
+    align-items: center;
 }
 
 .success h3 {
@@ -75,29 +76,26 @@ header {
 
 .campo {
     border: none;
-    align-items: center;
 }
 
 textarea {
+    width: 90%;
+    height: 8rem;
     border-radius: 8px;
     padding: 1rem;
-
 }
 
 .botaoFinal {
-    align-items: center;
 }
 
 .comprarNovamente {
-
+    width: 80%;
     color: #FFF;
     font-family: Inter;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
-    padding: 11px 152px;
     justify-content: center;
     align-items: center;
 
@@ -113,8 +111,4 @@ textarea {
 
 .caneca {
     color: var(--white);
-}
-
-.textoBotaoFinal {
-
 }
