@@ -7,13 +7,14 @@
 
     --background: #E8E5E4;
     --darker_grey: #C6C6C6;
+    --darker_brown: hsl(21, 45%, 24%);
 
     font-family: 'Inter', sans-serif;
 }
 
 .container {
-    max-width: 95%;
-    margin: 5% auto;
+    max-width: 90%;
+    margin: 3% auto;
 }
 
 button {
@@ -24,15 +25,21 @@ button {
 
 /*ESTILO DO HEADER*/
 header {
+    height: 3rem;
     display: flex;
     justify-content: space-between;
 }
 
 .logo {
+    width: 13rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     transition: 1s all;
+}
+
+.logo h1 {
+    font-size: 1.3rem;
 }
 
 .logo:hover {
@@ -41,6 +48,7 @@ header {
 }
 
 .cart {
+    height: 2.4rem;
     transition: 1s all;
 }
 
@@ -55,28 +63,28 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     gap: 1em;
 }
 
 .hero-text {
     box-sizing: border-box;
-    width: 33em;
+    width: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .hero-text h2 {
-    font-size: 42px;
+    font-size: 2.6rem;
     font-weight: 700;
     line-height: normal;
 }
 
 .hero-text p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
@@ -86,6 +94,7 @@ header {
     border-radius: 4px;
     font-size: 22px;
     font-weight: 700;
+    transition: 1s all;
 }
 
 .confira:hover {
@@ -95,7 +104,10 @@ header {
 
 .hero-img {
     box-sizing: border-box;
-    width: 32em;
+}
+
+.hero-img img {
+    width: 100%;
 }
 
 h3 {
@@ -116,8 +128,8 @@ h3 {
 }
 
 .cafe {
-    width: 300px;
-    height: 380px;
+    width: 18rem;
+    height: 24rem;
     flex-shrink: 0;
     background: var(--background);
     display: flex;
@@ -152,6 +164,8 @@ h3 {
 
 .botao__pequeno:hover {
     cursor: pointer;
+    transform: scale(1.03);
+    background-color: var(--darker_brown);
 }
 
 .cafe__conteudo {

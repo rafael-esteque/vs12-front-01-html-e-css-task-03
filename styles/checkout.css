@@ -12,8 +12,8 @@
 }
 
 .container {
-    max-width: 95%;
-    margin: 5% auto;
+    max-width: 90%;
+    margin: 3% auto;
 }
 
 button {
@@ -24,15 +24,21 @@ button {
 
 /*ESTILO DO HEADER*/
 header {
+    height: 3rem;
     display: flex;
     justify-content: space-between;
 }
 
 .logo {
+    width: 13rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     transition: 1s all;
+}
+
+.logo h1 {
+    font-size: 1.3rem;
 }
 
 .logo:hover {
@@ -41,6 +47,7 @@ header {
 }
 
 .cart {
+    height: 2.4rem;
     transition: 1s all;
 }
 
@@ -49,19 +56,25 @@ header {
     cursor: pointer;
 }
 
+/*ESTILO DO MAIN*/
+
+.sub-container {
+    padding-top: 5rem;
+}
+
 h3 {
     text-align: left;
     color: #000;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 .caixas_checkout {
+    padding-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 5.375rem;
     gap: 10%;
 }
 
@@ -74,16 +87,19 @@ h4 {
 }
 
 .dados {
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
     flex: 1;
     display: inline-flex;
     padding: 28px 32px;
+    margin-bottom: 2rem;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 31px;
     border-radius: 4px;
     background: var(--background);
-    height: fit-content;
 }
 
 .complete {
@@ -108,21 +124,23 @@ h4 {
 }
 
 .selecionados {
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
     flex: 1;
     display: inline-flex;
     padding: 28px 32px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 31px;
     border-radius: 4px;
     background: var(--background);
-    height: fit-content;
 }
 
 .cafe_selecionado {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     flex-shrink: 0;
 }
 
@@ -186,7 +204,7 @@ h4 {
 .confirmarPedido {
     color: #FFF;
     font-family: Inter;
-    font-size: 22px;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -198,4 +216,11 @@ h4 {
     gap: 10px;
 
     border-radius: 4px;
+
+    transition: 1s all;
+}
+
+.confirmarPedido:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
