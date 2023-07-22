@@ -1,6 +1,8 @@
 # vs12-front-01-html-e-css-task-03
 Atividade avaliativa (task) relativa ao 3° dia do curso de front-end do Programa Vem Ser, 12ª Edição.
 
+<a href="https://rafael-esteque.github.io/vs12-front-01-html-e-css-task-03/">Veja aqui</a> o deploy do site no GitHub.
+
 <p align="center">
     <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-sobre-o-projeto">Sobre o Projeto</a>&nbsp;&nbsp;&nbsp;
