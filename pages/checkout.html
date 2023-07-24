@@ -4,89 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/SGV" href="../assets/Vector.svg">
-    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/checkout.css">
+    <link rel="stylesheet" href="../styles/reset.css">
     <title>Checkout</title>
 </head>
 
-<body>
+<body class="container">
     <header>
-        <div class="logo">
+        <div class="logo" onclick="location.href='/index.html'">
             <img src="../assets/Vector.svg">
             <h1>Vemser Coffee</h1>
         </div>
-        <img src="../assets/ShoppingCart.svg">
+        <img class="cart" onclick="location.href='#'" src="../assets/ShoppingCart.svg">
     </header>
 
-    <main class="container">
-        <h3 class="h3__checkout">Checkout</h3>
+    <main>
+        <section class="sub-container">
+            <h3 class="h3__checkout">Checkout</h3>
 
-        <section class="caixas_checkout">
+            <section class="caixas_checkout">
 
-            <div class="dados">
-                <div class="complete">
-                    <h4>Complete seu pedido!</h4>
-                    <p>Insira seus dados para receber seu cafezinho.</p>
-                </div>
-                <input class="input" placeholder="Nome" required>
-                <br>
-                <input class="input" placeholder="CPF" required>
-            </div>
-
-            <div class="selecionados">
-                <div class="complete">
-                    <h4>Você selecionou</h4>
-                    <p>Confira se está tudo certo no seu pedido</p>
+                <div class="dados">
+                    <div class="complete">
+                        <h4>Complete seu pedido!</h4>
+                        <p>Insira seus dados para receber seu cafezinho.</p>
+                    </div>
+                    <input class="input" placeholder="Nome" required>
+                    <input class="input" placeholder="CPF" required>
                 </div>
 
-                <div class="selecionado">
-                    <img class="cafe_selecionado" src="../assets/expresso-tradicional.png">
-                    <div class="contador">
-                        <h5>Expresso Tradicional</h5>
-                        <div class="botoes">
-                            <div><button>+</button></button><span></span>1<span><button>-</button></div>
-                            <div><img src="../assets/Trash.svg"></div>
+                <div class="selecionados">
+                    <div class="complete">
+                        <h4>Você selecionou</h4>
+                        <p>Confira se está tudo certo no seu pedido</p>
+                    </div>
+
+                    <div class="selecionado">
+                        <img class="cafe_selecionado" src="../assets/expresso-tradicional.png">
+                        <div class="contador">
+                            <h5>Expresso Tradicional</h5>
+                            <div class="botoes">
+                                <div class="botao_contador"><p>+</p><p>1</p><p>-</p></div>
+                                <div><img src="../assets/Trash.svg"></div>
+                            </div>
                         </div>
+                        <p><strong>R$ 8,99</strong></p>
                     </div>
-                    <p><strong>R$ 8,99</strong></p>
-                </div>
 
-                <div class="selecionado">
-                    <img class="cafe_selecionado" src="../assets/expresso-tradicional.png">
-                    <div class="contador">
-                        <h5>Expresso Tradicional</h5>
-                        <div class="botoes">
-                            <div><button>+</button></button><span></span>1<span><button>-</button></div>
-                            <div><img src="../assets/Trash.svg"></div>
+                    <div class="selecionado">
+                        <img class="cafe_selecionado" src="../assets/expresso-tradicional.png">
+                        <div class="contador">
+                            <h5>Expresso Tradicional</h5>
+                            <div class="botoes">
+                                <div class="botao_contador"><p>+</p><p>1</p><p>-</p></div>
+                                <div><img src="../assets/Trash.svg"></div>
+                            </div>
                         </div>
+                        <p><strong>R$ 8,99</strong></p>
                     </div>
-                    <p><strong>R$ 8,99</strong></p>
+
+                    <div class="lista-checkout">
+
+                        <div class="linha">
+                            <div>Total de itens</div>
+                            <div>R$ 17,98</div>
+                        </div>
+
+                        <div class="linha">
+                            <div>Taxa de serviço</div>
+                            <div>R$ 3,00</div>
+                        </div>
+
+                        <div class="linha">
+                            <div><strong>Total</strong></div>
+                            <div><strong>R$ 20,98</strong></div>
+                        </div>
+
+                    </div>
+
+                    <button class="confirmarPedido" onclick="location.href='/pages/success_page.html'">Confirmar pedido!</button>
+
+                    
+
                 </div>
 
-                <div class="lista-checkout">
-
-                    <div class="linha">
-                        <div>Total de intens</div>
-                        <div>R$ 17,98</div>
-                    </div>
-
-                    <div class="linha">
-                        <div>Taxa de serviço</div>
-                        <div>R$ 3,00</div>
-                    </div>
-
-                    <div class="linha">
-                        <div><strong>Total</strong></div>
-                        <div><strong>R$ 20,98</strong></div>
-                    </div>
-
-                </div>
-
-                <button class="confirmarPedido" onclick="location.href='/pages/success_page.html'">Confirmar pedido!</button>
-
-                
-
-            </div>
-
+            </section>
         </section>
 
 
